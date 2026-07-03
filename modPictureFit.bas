@@ -103,11 +103,6 @@ Private Sub FitPictureInsideRange(ByVal pic As Shape, ByVal targetRange As Range
     heightScale = availableHeight / pic.Height
     scaleFactor = MinDouble(widthScale, heightScale)
 
-    ' Do not enlarge small pictures; only shrink pictures that exceed the target area.
-    If scaleFactor > 1 Then
-        scaleFactor = 1
-    End If
-
     newWidth = pic.Width * scaleFactor
     newHeight = pic.Height * scaleFactor
 

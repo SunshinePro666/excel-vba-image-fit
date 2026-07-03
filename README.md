@@ -10,9 +10,8 @@ Excel VBA tool for fitting the currently selected picture inside the cell under 
 - Uses the picture's `TopLeftCell` as the target cell.
 - If that cell is part of a merged range, uses the full merged range.
 - Preserves the picture's aspect ratio.
-- Shrinks oversized pictures to fit completely inside the target range.
+- Resizes pictures up or down to fit completely inside the target range.
 - Leaves a 5% margin on every side, so the image can use up to 90% of the target width and height.
-- Never enlarges pictures that are already smaller than the available target area.
 - Centers the picture horizontally and vertically.
 - Sets `Placement = xlMoveAndSize`, which is Excel's "Move and size with cells" option.
 - Ignores charts, SmartArt, icons, groups, and other non-picture objects.
