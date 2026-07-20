@@ -13,7 +13,7 @@ Excel VBA tool for fitting the currently selected picture inside the cell under 
 - Resizes pictures up or down to fit completely inside the target range.
 - Leaves a 5% margin on every side, so the image can use up to 90% of the target width and height.
 - Centers the picture horizontally and vertically.
-- Sets `Placement = xlMoveAndSize`, which is Excel's "Move and size with cells" option.
+- Sets `Placement = xlMove`, so the picture moves with its cell but keeps its resized dimensions when row heights or column widths change.
 - Ignores charts, SmartArt, icons, groups, and other non-picture objects.
 - Shows friendly messages instead of raising errors for unsupported selections.
 

@@ -111,7 +111,7 @@ Private Sub FitPictureInsideRange(ByVal pic As Shape, ByVal targetRange As Range
     pic.Height = newHeight
     pic.Left = targetRange.Left + ((targetRange.Width - newWidth) / 2)
     pic.Top = targetRange.Top + ((targetRange.Height - newHeight) / 2)
-    pic.Placement = xlMoveAndSize
+    pic.Placement = xlMove
 End Sub
 
 Private Function MinDouble(ByVal firstValue As Double, ByVal secondValue As Double) As Double
